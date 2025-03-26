@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links with Pseudo-Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin-top: 50px;
+        }
+
+        /* Default link style */
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+            margin: 10px;
+        }
+
+        /* 1. Unvisited link */
+        a:link {
+            color: blue;
+        }
+
+        /* 2. Visited link */
+        a:visited {
+            color: purple;
+        }
+
+        /* 3. Hover effect */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* 4. Active link */
+        a:active {
+            color: orange;
+        }
+
+        /* 5. First link has special styling */
+        a:first-of-type {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>pseudoclasses</h2>
+
+    <a href="c:\Users\Jagdeesh\Desktop\Test\photo.html">farming</a>
+    <a href="c:\Users\Jagdeesh\Desktop\Test\article with css.html">sunithawilliams</a>
+    <a href="c:\Users\Jagdeesh\Desktop\Test\borders.html">life</a>
+    <a href="https://www.google.com/search?q=happy+days+movie&oq=happy+da&gs_lcrp=EgRlZGdlKgoIAhAAGLEDGIAEMg0IABAAGLEDGIAEGPkHMgcIARAAGIAEMgoIAhAAGLEDGIAEMgcIAxAAGIAEMgYIBBBFGDkyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgATSAQkxMTQ4NGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8">happy days</a>
+    <a href="https://www.w3schools.com/">technology</a>
+
+</body>
+</html>
