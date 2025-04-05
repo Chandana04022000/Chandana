@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      height: 100vh;
+      grid-template-areas:
+        "header header header header"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "footer footer footer footer";
+      gap: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: blueviolet;
+    }
+
+    .section1 {
+      grid-area: section1;
+      background-color: blue;
+    }
+
+    .section2 {
+      grid-area: section2;
+      background-color: chartreuse;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: aquamarine;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: coral;
+    }
+
+    /* Optional: Add some padding and styling for readability */
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      height: 100vh;
+      grid-template-areas:
+        "header header header header"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "section1 content content section2"
+        "footer footer footer footer";
+      gap: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: blueviolet;
+    }
+
+    .section1 {
+      grid-area: section1;
+      background-color: blue;
+    }
+
+    .section2 {
+      grid-area: section2;
+      background-color: chartreuse;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: aquamarine;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: coral;
+    }
+
+    /* Optional: Add some padding and styling for readability */
+    .container > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: white;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="section1">Section 1</div>
+    <div class="content">Content</div>
+    <div class="section2">Section 2</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="section1">Section 1</div>
+    <div class="content">Content</div>
+    <div class="section2">Section 2</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
