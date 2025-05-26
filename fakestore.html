@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKEstore</title>
+</head>
+<STYLE>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      background-color: blueviolet;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    #buttons button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #buttons button:hover {
+      background-color: #2980b9;
+    }
+
+    #PRODUCTS {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin: 0 0 10px 0;
+    }
+  </style>
+<body>
+    <H1>WELCOME TO OUR ONLINE STORE</H1>
+    <button onclick="handleAll()">ALL PRODUCTS</button><button onclick="handleJewelery()">JEWELLERY</button><button onclick="handleElectronic()">ELECTRONICS</button><button onclick="handleMens()">MEN'S</button><button onclick="handleWomen()">WOMEN'S</button>
+     <div id="PRODUCTS">
+
+     </div>
+    <script src="fakestore.js"></script>
+</body>
+</html>
