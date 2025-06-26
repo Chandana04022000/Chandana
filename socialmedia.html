@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Redirect</title>
+</head>
+<body>
+
+<h2>Enter a website name (Instagram, Facebook, or Google):</h2>
+<input type="text" id="websiteInput" placeholder="Type here..." />
+<button onclick="redirectToWebsite()">Go</button>
+
+<script>
+function redirectToWebsite() {
+  let input = document.getElementById("websiteInput").value.toLowerCase();
+
+  if (input === "instagram") {
+    window.location.href = "https://www.instagram.com";
+  } else if (input === "facebook") {
+    window.location.href = "https://www.facebook.com";
+  } else if (input === "google") {
+    window.location.href = "https://www.google.com";
+  } else {
+    alert("Website not recognized. Please enter Instagram, Facebook, or Google.");
+  }
+}
+</script>
+
+</body>
+</html>
